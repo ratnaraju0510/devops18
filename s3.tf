@@ -21,6 +21,14 @@ bucket = aws_s3_bucket.one.id
 versioning_configuration {
 status = "Enabled"
 }
+
+terraform {
+backend "s3" {
+bucket = "aws_s3_bucket.one.id"
+key = "prod/terraform.tfstate"
+}
+}
+
 }
 
 

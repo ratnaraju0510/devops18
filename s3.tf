@@ -1,6 +1,5 @@
 resource "aws_s3_bucket" "one" {
   bucket = "nani_bucket"
-  region = "us-east-1"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
